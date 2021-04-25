@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mancala Game</title>
+    <link rel="stylesheet" th:href="@{webjars/bootstrap/4.2.1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+</head>
+<body>
+<main role="main" class="container">
+    <h1 class="game-title text-dark">Mancala Game</h1>
+    <div class="button-group">
+        <button id="12" pit-id="6" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+        <button id="11" pit-id="5" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+        <button id="10" pit-id="4" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+        <button id="9" pit-id="3" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+        <button id="8" pit-id="2" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+        <button id="7" pit-id="1" player="PLAYER_2" type="button"
+                class="clickable_btn btn btn-success small-pit" disabled>6
+        </button>
+    </div>
+    <div class="button-group">
+        <button id="6" pit-id="7" player="PLAYER_1" type="button"
+                class="btn btn-primary big-pit float-right" disabled>
+            0
+        </button>
+        <button id="13" pit-id="7" player="PLAYER_2" type="button" class="btn btn-success big-pit" disabled
+                style="display: flow-root">0
+        </button>
+    </div>
+    <div class="button-group">
+        <button id="0" pit-id="1" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+        <button id="1" pit-id="2" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+        <button id="2" pit-id="3" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+        <button id="3" pit-id="4" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+        <button id="4" pit-id="5" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+        <button id="5" pit-id="6" player="PLAYER_1" type="button" class="clickable_btn btn btn-primary small-pit">6
+        </button>
+    </div>
+    <div id="winner_modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close close_modal" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>New Game?</p>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-primary" href="/board">Yes!</a>
+                    <button type="button" class="btn btn-secondary close_modal" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" th:src="@{webjars/bootstrap/4.2.1/js/bootstrap.min.js}"></script>
+<script th:src="@{https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js}"></script>
+<script th:src="@{js/main.js}"></script>
+</body>
+</html>
