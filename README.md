@@ -18,10 +18,10 @@ This is a maven project. So just use maven lifecycle. (*mvn clean compile* to co
 Since this is a spring boot application, just run MancalaApplication which is annotated with SpringBootApplication.
 \
 \
-The application will run on 8080 port. So to open the home page go to the URL: *http://localhost:8080*
+The application will run on 8080 port. So to open the home page follow *http://localhost:8080*.
 \
 \
-You will see a button written *Click to Play* on it. Please click it, this will redirect you to the inside the game, and
+You will see a button written *Click to Play* on it. Please click it, this will redirect you inside the game, and
 you will see the game board. Now you're ready to play, just enjoy!
 
 ## Endpoints
@@ -37,7 +37,7 @@ There are two REST endpoints in the project:
 must call */new-game* endpoint to create an initial board.
 
 Swagger was implemented to test the endpoints easily. You will see the endpoint details on Swagger UI. To open the
-Swagger UI, please go to: *http://localhost:8080/swagger-ui/*
+Swagger UI, please follow *http://localhost:8080/swagger-ui/*.
 
 ## Logging
 
