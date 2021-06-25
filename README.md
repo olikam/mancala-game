@@ -13,11 +13,11 @@ This is a mancala game that has a basic UI and full backend code. Technologies:
 
 ## Build & Run
 
-This is a maven project. So just use maven lifecycle. (*mvn clean compile* to compile)
+This is a maven project. So simply use maven lifecycle. (*mvn clean compile* to compile)
 Since this is a spring boot application, just run MancalaApplication which is annotated with SpringBootApplication.
 \
 \
-The application will run on 8080 port. So to open the home page follow *http://localhost:8080*.
+The application will run on 8080 port. So, to open the home page, follow *http://localhost:8080*.
 \
 \
 You will see a button written *Click to Play* on it. Please click it, this will redirect you inside the game, and
