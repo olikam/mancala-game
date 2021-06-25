@@ -9,7 +9,6 @@ This is a mancala game that has a basic UI and full backend code. Technologies:
 * HTML, CSS, Bootstrap
 * Thymeleaf
 * JUnit 5
-* H2
 * Swagger 3
 
 ## Build & Run
@@ -42,11 +41,6 @@ Swagger UI, please follow *http://localhost:8080/swagger-ui/*.
 ## Logging
 
 slf4j library was used for logging.
-
-## Session Management
-
-The session is stored both on Spring, and H2 database. Since H2 is in-memory storage inside the application, after
-restarting, the session is removed. So it's not fully functional.
 
 ## Unit Tests
 
